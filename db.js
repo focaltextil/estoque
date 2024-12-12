@@ -257,7 +257,7 @@ async function generateHTML() {
 }
 
 // Rota principal
-app.get('/', async (req, res) => {
+app.get('/home', async (req, res) => {
     const htmlContent = await generateHTML();
     res.send(htmlContent);
 });
