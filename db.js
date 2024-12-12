@@ -4,7 +4,7 @@ const path = require('path');
 const XLSX = require('xlsx');
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 // Middleware para servir arquivos estáticos
 app.use('/img', express.static(path.join(__dirname, 'img')));

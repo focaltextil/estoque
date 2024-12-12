@@ -1,11 +1,11 @@
 {
   "dependencies": {
+    "express": "^4.21.2",
     "xlsx": "^0.18.5"
   },
   "name": "estoque-teste-1",
   "version": "1.0.0",
   "main": "db.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
