@@ -4,8 +4,13 @@ const path = require('path');
 const XLSX = require('xlsx');
 const url = require('url');
 const { Console } = require('console');
+const express = require('express');
+const app = express();
 
 const PORT = 3001;
+const HOST = '0.0.0.0';
+
+
 
 async function loadExcelData() {
     // const filePath = path.join('R:/TEMPORARIO', 'PLANILHA PRODUTOS ACABADOS 02-09-24.xlsx');
@@ -274,9 +279,10 @@ const requestHandler = async (req, res) => {
 };
 
 
-// const array_groupy = requestHandler()
+app.listen(PORT, HOST, () => {
+    console.log(`Server listening on port ${PORT}`);
+});
 
-// console.log(htmlContent)
 
 
 
